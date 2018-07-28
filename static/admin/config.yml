@@ -19,6 +19,17 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "corps"
+    label: "Corps"
+    folder: "src/pages/corps"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Last updated", name: "last updated", widget: "datetime"}
+      - {label: "Tax paid", name: "tax paid", widget: "text"}
+
   - name: "pages"
     label: "Pages"
     files:
