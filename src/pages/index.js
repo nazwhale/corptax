@@ -7,6 +7,7 @@ export default class IndexPage extends React.Component {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
+    console.log(posts[0].node.frontmatter);
     return (
       <section className="section">
         <div className="container">
